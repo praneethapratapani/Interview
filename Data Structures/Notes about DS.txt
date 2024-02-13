@@ -1,0 +1,8 @@
+ARRAYS: 
+    They are stored contiguously
+    Declarations: 
+    Simple array: int[] arrayname or int arrayname[]
+    Multi dimensional array : datatype [][] arrayrefvariable; or datatype arrayrefvariable[][];
+ARRAYS CLASS:
+    java.util.Arrays package should be imported
+    
