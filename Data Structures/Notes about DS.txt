@@ -27,6 +27,14 @@ TREES:
                         right side nodes are greater than node's value
  Balanced binary tree -  A binary tree where the height difference between 
                         the left and right subtrees of any node is at most 1.
+SETS - only have unique elements, hashcodes are returned as position or index
+       Sets are used to store unique elements and check for the existence 
+       of specific values.
+
+MAPS - stores key-value pairs, no two keys can be repeated and 
+       each key has only one value.
+       Maps are used to associate keys with values and perform lookup operations based on keys.
+
 TIME COMPLEXITY
 Access: O(1) (for arrays, hash-based structures)
 Insertion/Deletion:
