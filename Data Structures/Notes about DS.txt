@@ -3,6 +3,36 @@ ARRAYS:
     Declarations: 
     Simple array: int[] arrayname or int arrayname[]
     Multi dimensional array : datatype [][] arrayrefvariable; or datatype arrayrefvariable[][];
+
 ARRAYS CLASS:
     java.util.Arrays package should be imported
-    
+
+JAGGED ARRAYS:
+    Every row has different number of columns
+
+LINKED LIST: Made of nodes consisting of data fields and pointer to next node
+    Circular linked list: if last node has a tail pointer and pointing it to first node ,
+             then it becomes circular linked list.
+    Doubly linked list : have three elements - pointer - data - pointer          
+
+STACK: push, pop, peek (sees first element without removing it) - LIFO
+
+QUEUE: push, pop, peek (follows LIFO), poll (removes head or returns null if no head,follows FIFO) - FIFO   
+
+TREES: 
+    inorder : left - current node - right
+    pre order : current node - left - right
+    post order: left - right - current 
+ Binary search tree - all left subtree values are less than node's value &
+                        right side nodes are greater than node's value
+ Balanced binary tree -  A binary tree where the height difference between 
+                        the left and right subtrees of any node is at most 1.
+TIME COMPLEXITY
+Access: O(1) (for arrays, hash-based structures)
+Insertion/Deletion:
+O(1) (for stacks, queues, hash-based structures)
+O(n) (for linked lists, arrays - at arbitrary position)
+Traversal/Searching: O(n) (for trees, linked lists)
+Insertion/Deletion/Searching (on average):
+O(log n) (for balanced binary search trees)
+O(1) (for hash-based structures)                        
