@@ -1,9 +1,11 @@
 ARRAYS: 
-    They are stored contiguously
+    They are stored contiguously, homogeneous
     Declarations: 
     Simple array: int[] arrayname or int arrayname[]
     Multi dimensional array : datatype [][] arrayrefvariable; or datatype arrayrefvariable[][];
-
+Insertion: At end: O(1), At some index : O(n)
+Deletion: O(n);
+Access O(1);
 ARRAYS CLASS:
     java.util.Arrays package should be imported
 
@@ -34,6 +36,9 @@ SETS - only have unique elements, hashcodes are returned as position or index
 MAPS - stores key-value pairs, no two keys can be repeated and 
        each key has only one value.
        Maps are used to associate keys with values and perform lookup operations based on keys.
+Keyset() function will give you all the keys present in hashmap 
+get(key) - will give you value present at key
+put() - will add
 
 TIME COMPLEXITY
 Access: O(1) (for arrays, hash-based structures)
