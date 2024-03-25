@@ -44,6 +44,7 @@ use linkedlist while defining
 - post order: left - right - current 
  
 **Binary search tree** - all left subtree values are less than node's value & right side nodes are greater than node's value
+
 **Binary tree**
 - has only one root
 - has exactly one path b/w root and any node
