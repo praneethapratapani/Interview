@@ -39,19 +39,34 @@ use linkedlist while defining
 
 ### TREES 
 
+
 - inorder : left - current node - right
 - pre order : current node - left - right
 - post order: left - right - current 
  
+ ```
+    class Node{
+        int val;
+        Node left,right;
+
+        public Node(int item){
+            val = item;
+            left = right = null;
+        }
+    }
+ ```
 **Binary search tree** - all left subtree values are less than node's value & right side nodes are greater than node's value
+
+insert,delete and search - O(n) 
 
 **Binary tree**
 - has only one root
 - has exactly one path b/w root and any node
 - any node will have atmost 2 children
+- empty tree is also an binary tree
 
 **Balanced binary tree** -  A binary tree where the height difference between the left and right subtrees of any node is at most 1.
-
+insert,delete and search - O(log n) base 2
 
 ### SETS 
 only have unique elements, hashcodes are returned as position or index. Sets are used to store unique elements and check for the existence of specific values.
