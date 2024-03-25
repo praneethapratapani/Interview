@@ -1,5 +1,6 @@
-Reverse double pointers concept : 
+### Reverse double pointers concept : 
 
+```
     public void reverse(int[] nums,int start,int end){
         while(start<end){
             int temp = nums[start];
@@ -9,13 +10,17 @@ Reverse double pointers concept :
             end--;
         }
     }
+```
 
-Greedy
-1.Declare an empty result = 0.
-2.We make a greedy choice to select, If the choice is feasible add it to the final result.
-3.return the result.
+### Greedy
+
+- Declare an empty result = 0.
+- We make a greedy choice to select, If the choice is feasible add it to the final result.
+- return the result.
 
 Getting a random value from a list
+```
 public int getRandom() {
         return list.get(random.nextInt(list.size()));
-    }
+}
+```
