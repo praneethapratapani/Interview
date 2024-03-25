@@ -27,9 +27,9 @@ public int getRandom() {
 
 ### BFS - Breadth First Search
 We use queue here
-push parent first
-pop parent - push children from left to right
-pop and push everything accordingly until queue is empty
+1.push parent first
+2.pop parent - push children from left to right
+3.pop and push everything accordingly until queue is empty
 
 Time complexity - O(n)
 
@@ -63,8 +63,9 @@ Time complexity - O(n)
 ### DFS - Depth First Search
 Time complexity - O(|v|) where |v| is no.of.vertices
 we use stack here
-push parent
-push children right to left
+1.push parent
+2.push children right to left
+3.pop everything until stack is empty
 
 ```
     class Tree{
