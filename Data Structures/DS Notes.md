@@ -71,6 +71,15 @@ insert,delete and search - O(log n) base 2
 ### SETS 
 only have unique elements, hashcodes are returned as position or index. Sets are used to store unique elements and check for the existence of specific values.
 
+**Disjoint Set Data Structure**
+any sets which does not have any common element - uses union
+
+Union by size - O(log n) - point smaller tree to the root of larger tree 
+- find will become O(1) - in best case and O(log n)in worst case
+- 
+
+Path Compression - almost O(1) - log* n
+actual complexity is O(alpha(n)) - alpha(n) is called ackermann's function
 ### MAPS 
 
 Stores key-value pairs, no two keys can be repeated and each key has only one value. Maps are used to associate keys with values and perform lookup operations based on keys.
@@ -78,6 +87,27 @@ Stores key-value pairs, no two keys can be repeated and each key has only one va
 - Keyset() function will give you all the keys present in hashmap 
 - get(key) - will give you value present at key
 - put() - will add
+
+### GRAPHS
+- Tree is a subset of graph - acyclic undirected graph
+- uses set i.e., set(vertices,edges)
+- any vertex can be connected to any vertex (nodes are vertices)
+- if there are n vertices, each vertex have n-1 edges
+- for undirected graph, total edges = n(n-1)/2
+- for directed graph, total edges = n(n-1)
+- if it has self loop then n2 edges 
+- dense graph - almost all edges are connected to each other
+- sparse graph - few are connected to each other
+- Path : is sequence of vertices where each vertex is connected via edge.
+- simple path - vertices are not repeated
+- cycle is like a loop
+- adjacency matrix - 1 is assigned when there is edge and 0 when there is no edge.
+- adjacency list is used for saving memory
+
+**Directed Graph** - has directions between vertices
+
+**Undirected Graph** - just and edge represents the connection - like a double sided arrow
+Ex: social network - if you are friend of them then they are friend of yours - like facebook.
 
 **TIME COMPLEXITY**
 - Access: O(1) (for arrays, hash-based structures)
