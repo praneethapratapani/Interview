@@ -37,12 +37,26 @@ push, pop, peek (sees first element without removing it) - LIFO
 - enqueue - q.offer(param),dequeue - q.poll() and poll - O(1)
 use linkedlist while defining
 
+### PRIORITY QUEUE OR HEAP
+should follow 3 conditions
+  1. Binary tree - every node has atmost 2 children
+  2. Heap Invariant - every node is less(min)/greater(max) or equal to its children
+  3. Always a complete tree
+most important first out
+- min heap 
+- max heap 
+
+peekMin() - O(1)
+removeMin() - bubbledown : will choose smallest child and swap till end.  O(1) for removing last node + O(h) for bubble down
+for a complete tree - log n is height
+add() - implement bubbleup after adding the element to make it balanced (mostly in the left subtree)
+
+so, for remove and add - best is O(1) and worst is O(log n)
+in practice - remove is O(log n) and add is O(1)
+Heap using array 
+see notes
+
 ### TREES 
-
-
-- inorder : left - current node - right
-- pre order : current node - left - right
-- post order: left - right - current 
  
  ```
     class Node{

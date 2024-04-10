@@ -169,3 +169,22 @@ Space complexity - O(|v|)
     }
 
 ```
+
+### Traversal Algorithms
+
+- inorder : left - current node - right
+- pre order : current node - left - right
+- post order: left - right - current 
+
+### Floyd's Build heap Algorithm
+
+Time Complexity -  O(n)
+
+1. Add all elements into array
+2. percolate(parent) from last index
+    - keep bubbling down all levels
+
+
+```
+
+```
