@@ -94,6 +94,8 @@ Union by size - O(log n) - point smaller tree to the root of larger tree
 
 Path Compression - almost O(1) - log* n
 actual complexity is O(alpha(n)) - alpha(n) is called ackermann's function
+
+![Alt text](<Simplified calculations to.png>)
 ### MAPS 
 
 Stores key-value pairs, no two keys can be repeated and each key has only one value. Maps are used to associate keys with values and perform lookup operations based on keys.
@@ -122,6 +124,15 @@ Stores key-value pairs, no two keys can be repeated and each key has only one va
 
 **Undirected Graph** - just and edge represents the connection - like a double sided arrow
 Ex: social network - if you are friend of them then they are friend of yours - like facebook.
+
+### DYNAMIC PROGRAMMING
+
+1. an optimal substructure property (recursion)
+2. overlapping sub problems
+
+Two variants
+    - Bottom up dynamic programming - Time O(n),Space - O(n)
+    - memoization - it does not resolve already calculated sub part, it takes from the table stored - Time O(n),Space - O(n)
 
 **TIME COMPLEXITY**
 - Access: O(1) (for arrays, hash-based structures)

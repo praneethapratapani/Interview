@@ -183,8 +183,3 @@ Time Complexity -  O(n)
 1. Add all elements into array
 2. percolate(parent) from last index
     - keep bubbling down all levels
-
-
-```
-
-```
