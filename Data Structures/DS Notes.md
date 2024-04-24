@@ -134,6 +134,14 @@ Two variants
     - Bottom up dynamic programming - Time O(n),Space - O(n)
     - memoization - it does not resolve already calculated sub part, it takes from the table stored - Time O(n),Space - O(n)
 
+### Minimum Spanning Tree
+is a subgraph of an undirected weighted graph G, such that
+- its a tree (acyclic)
+- it covers all the vertices V
+  - contains V-1 edges
+- total cost associated with tree edges is the minimum among all possible spanning trees.
+- may not be unique.
+
 **TIME COMPLEXITY**
 - Access: O(1) (for arrays, hash-based structures)
 - Insertion/Deletion:

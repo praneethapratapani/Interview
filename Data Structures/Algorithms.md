@@ -25,6 +25,36 @@ public int getRandom() {
 }
 ```
 
+### Dijktra's 
+
+Its a solution to single-source shortest path problem in graph theory
+ - works both on directed and undirected but only on non negative edges.
+ - Input: weighted graph , and vertex , Output: lengths of shortest paths from a given source vertex to all other vertices.  
+
+ ```
+    ![Alt text](image.png)
+ ```
+
+Time Complexity : O(|V|log|V| + |E|log|V|) = O(|E|log|V|), 
+assuming |V| = O(|E|) for connected graph.
+
+### Kruskal's 
+
+- sort edges by weight
+- building a spanning forest until it becomes a minimum spanning tree without forming a cycle.
+
+```
+    KRUSKAL(G):
+    A = ∅
+    For each vertex v ∈ G.V:
+        MAKE-SET(v)
+    For each edge (u, v) ∈ G.E ordered by increasing order by weight(u, v):
+        if FIND-SET(u) ≠ FIND-SET(v):       
+        A = A ∪ {(u, v)}
+        UNION(u, v)
+    eturn A
+```
+
 ### BFS - Breadth First Search for tree
 We use queue here
 1.push parent first
