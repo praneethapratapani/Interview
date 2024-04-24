@@ -52,8 +52,17 @@ assuming |V| = O(|E|) for connected graph.
         if FIND-SET(u) ≠ FIND-SET(v):       
         A = A ∪ {(u, v)}
         UNION(u, v)
-    eturn A
+    return A
 ```
+
+Time Complexity : O(|V|log|V| + |E|log|E|) = O(|E|log|E|) 
+### Prism's
+
+Step 1: min priority queue - add all the vertices and consider the distance is infinity
+Step 2: pop the element from queue and update the weight in queue for the popped elements' adjacent vertices.
+Step 3: next choose the minimum distant adjacent elements from the queue and continue the process of updating the distances/weights(if they are lesser than the previous weights) after filling out the infinite distantn elements
+
+Time Complexity : O(|V|log|V| + |E|log|V|) = O(|E|log|V|)
 
 ### BFS - Breadth First Search for tree
 We use queue here
