@@ -142,6 +142,30 @@ is a subgraph of an undirected weighted graph G, such that
 - total cost associated with tree edges is the minimum among all possible spanning trees.
 - may not be unique.
 
+### TRIE
+came from word re'trie've.
+
+- Each trie has a root node
+- each node is a string and each edge is a character
+
+```
+    public class TrieNode{
+        public char val;
+        public TrieNode[] children;
+        public boolean isWord;
+
+        public TrieNode(char c){
+            val = c;
+            children = new TrieNode[26]; // For alphabets
+            isWord = false;
+        }
+    }
+```
+
+Complexities
+Insertion - O(n), O(n*m)
+Deletion - O(n) ,O(1)
+Search - O(n), O(1)
 **TIME COMPLEXITY**
 - Access: O(1) (for arrays, hash-based structures)
 - Insertion/Deletion:
